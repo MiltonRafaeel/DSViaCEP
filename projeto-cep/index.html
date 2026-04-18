@@ -28,7 +28,7 @@
                     <div class="form-control">
                         <label for="cep">CEP:</label>
                         <input name="cep" id="cep" class="form-input" placeholder="CEP" type="text">
-                        <div class="error-message">Campo Requerido</div>                            
+                        <div class="error-message" data-error="cep">Campo Requerido</div>                            
                     </div>
                     <div class="form-control">
                         <label for="street">Logradouro:</label>
@@ -37,15 +37,15 @@
                     <div class="form-control">
                         <label for="number">Número:</label>
                         <input name="number" id="number" class="form-input" placeholder="Número" type="text">
-                        <div class="error-message">Campo Requerido</div>
+                        <div class="error-message" data-error="number">Campo Requerido</div>
                     </div>
                     <div class="form-control">
                         <label for="city">Cidade:</label>
                         <input name="city" id="city" class="form-input" placeholder="Cidade" type="text" disabled>
                     </div>
                     <div class="btn-container">
-                        <button class="btn btn-left" type="submit">Salvar</button>
-                        <button class="btn btn-right">Limpar</button>
+                        <button name="btnSave" class="btn btn-left" type="submit">Salvar</button>
+                        <button name="btnClear" class="btn btn-right">Limpar</button>
                     </div>
                 </form>
             </div>
@@ -64,6 +64,8 @@
             </div>
         </section>
     </main>
+
+    <script type="module" src="./js/dsviacep.js"></script>
 </body>
 
 </html>
