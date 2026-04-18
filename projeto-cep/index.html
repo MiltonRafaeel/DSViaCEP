@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,23 +25,25 @@
         <section id="form-section" class="form-container">
             <div class="card-form">
                 <form name="newAddress" action="">
-                    <div>
+                    <div class="form-control">
                         <label for="cep">CEP:</label>
-                        <input name="cep" id="cep" placeholder="CEP" type="text">
+                        <input name="cep" id="cep" class="form-input" placeholder="CEP" type="text">
+                        <div class="error-message">Campo Requerido</div>                            
                     </div>
-                    <div>
+                    <div class="form-control">
                         <label for="street">Logradouro:</label>
-                        <input name="street" id="street" placeholder="Logradouro" type="text">
+                        <input name="street" id="street" class="form-input" placeholder="Logradouro" type="text" disabled>
                     </div>
-                    <div>
+                    <div class="form-control">
                         <label for="number">Número:</label>
-                        <input name="number" id="number" placeholder="Número" type="text">
+                        <input name="number" id="number" class="form-input" placeholder="Número" type="text">
+                        <div class="error-message">Campo Requerido</div>
                     </div>
-                    <div>
+                    <div class="form-control">
                         <label for="city">Cidade:</label>
-                        <input name="city" id="city" placeholder="Cidade" type="text">
+                        <input name="city" id="city" class="form-input" placeholder="Cidade" type="text" disabled>
                     </div>
-                    <div>
+                    <div class="form-control">
                         <button type="submit">Salvar</button>
                         <button>Limpar</button>
                     </div>
@@ -62,4 +65,5 @@
         </section>
     </main>
 </body>
+
 </html>
