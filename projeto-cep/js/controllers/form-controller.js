@@ -33,6 +33,7 @@ export function init() {
     state.errorNumber = document.querySelector('[data-error="number"]');
 
     state.inputNumber.addEventListener('change', handleInputNumberChange);
+    state.inputNumber.addEventListener('keyup', handleInputNumberKeyup);
     state.inputCep.addEventListener('change', handleInputCepChange);
     state.btnClear.addEventListener('click', handleBtnClearClick);
     state.btnSave.addEventListener('click', handleBtnSaveClick);
@@ -58,6 +59,10 @@ async function handleInputCepChange(event) {
     }
 }
 
+function handleInputNumberKeyup(event) {
+   state.address.number = event.target.value ;
+}
+
 function handleInputNumberChange(event) {
     if (event.target.value == "") {
         setFormError("number", "Campo Requerido");
@@ -69,7 +74,7 @@ function handleInputNumberChange(event) {
 
 async function handleBtnSaveClick(event) {
     event.preventDefault();
-    console.log(event.target);
+    console.log(state.address);
 }
 
 function handleBtnClearClick(event) {
