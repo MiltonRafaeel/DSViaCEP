@@ -14,7 +14,7 @@ O projeto permite consultar um CEP, preencher automaticamente os dados retornado
 
 ## 🖼️ Preview
 
-![Preview do projeto](https://cdn.abacus.ai/images/74a1de27-959e-40a6-817a-83b37b045c38.png)
+![Preview do projeto](./assets/dsviacep.png)
 
 ## ✨ Funcionalidades
 
